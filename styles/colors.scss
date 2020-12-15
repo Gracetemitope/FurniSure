@@ -1,0 +1,29 @@
+@import 'variables';
+
+.bg-primary-dark {
+  background: $primary-dark;
+}
+
+.bg-primary {
+  background: $primary-color;
+}
+
+.bg-dark {
+  background-color: $secondary-color;
+}
+
+.color-primary {
+  color: $primary-color;
+}
+
+.color-primary-dark {
+  color: $primary-dark;
+}
+
+.color-dark {
+  color: $secondary-color;
+}
+
+.color-inherit {
+  color: inherit;
+}

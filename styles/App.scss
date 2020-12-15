@@ -1,0 +1,94 @@
+// @import '~antd/dist/antd.css';
+@import 'variables';
+@import 'breakpoints';
+@import 'colors';
+@import 'flexbox';
+@import 'spacings';
+@import 'fonts';
+// @import 'animations';
+// @import 'antd';
+
+* {
+  outline: none;
+  background-repeat: no-repeat;
+  transition: 0.5s all;
+}
+
+*,
+::after,
+::before,
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  // font-family: $font-family-text;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: inherit !important;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+input,
+textarea,
+button {
+  border: none;
+}
+
+input {
+  ::-webkit-outer-spin-button,
+  ::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &[type='number'] {
+    -moz-appearance: textfield;
+  }
+}
+
+button {
+  background: none;
+
+  &::-moz-focus-inner {
+    border: none;
+  }
+
+  cursor: pointer;
+}
+
+form {
+  width: 100%;
+}
+
+h2,
+h3 {
+  line-height: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-primary;
+}
+
+img {
+  height: auto;
+  width: 100%;
+  border-radius: inherit;
+}
