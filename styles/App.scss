@@ -225,6 +225,13 @@ footer {
   border: 1px solid red;
 }
 
+// Aside Menu
+.aside-menu {
+  flex-basis: 300px;
+  border: 1px solid black;
+  height: 400px;
+}
+
 /** large screen ***/
 @media only screen and (min-width: 992px) {
   .first-sure {

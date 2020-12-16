@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +10,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-dark dflex padding-horizontal-lg">
     <a class="navbar-brand color-white logo" href="#" style="color: white;">FurniSure</a>
@@ -31,7 +29,8 @@
             COLLECTIONS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" style="color: lightgrey;"><span><i class="fas fa-store-alt"></i></span> PURCHASE
+          <a class="nav-link" href="./searchpage.html" style="color: lightgrey;"><span><i
+                class="fas fa-store-alt"></i></span> PURCHASE
             LIST</a>
         </li>
         <li class="nav-item">
@@ -44,7 +43,7 @@
   <section class="hero bg-primary-color full-width d-none d-md-block d-lg-block">
     <h2 class="color-white font-weight-bold text-align-center padding-top-lg">FurniSure</h2>
     <p class="color-white text-align-center">Buying And Selling couldn't be Simpler than this</p>
-    <form action="" class="full-width">
+    <form class="full-width" method="POST" action="./searchpage.html">
       <select id="cars" name="cars" class="padding-sm">
         <option value="volvo">All Departments</option>
         <option value="saab">Kitchen</option>
@@ -53,7 +52,8 @@
       </select>
       <input type="text" placeholder="What do you search for?" class="padding-sm">
       <input type="text" placeholder="Search|" class="padding-sm">
-      <button class="bg-dark padding-sm color-white">Search</button>
+      <a href="./searchpage.html">
+      <button class="bg-dark padding-sm color-white">Search</button></a>
     </form>
   </section>
   <section class="hot-deals padding-horizontal-lg margin-bottom-md d-none d-lg-block d-md-block margin-top-md">
