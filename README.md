@@ -31,7 +31,7 @@ Deploy on gh pages for testing purposes, please check the live demo
 
 👤 **Ajanaku Temitope Grace**
 
-- GitHub: [@ox_emmy](https://github.com/Gracetemitope)
+- GitHub: [@Gracetemitope](https://github.com/Gracetemitope)
 - Twitter: [@DevGrachy](https://twitter.com/DevGrachy)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ajanaku-temitope-427778199/)
 
