@@ -1,12 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FurniSure</title>
   <link rel="stylesheet" href="css/App.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/74091f2b8e.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
+
 <body>
-  <h1>Hello World</h1>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark dflex padding-horizontal-lg">
+    <a class="navbar-brand color-white logo" href="#" style="color: white;">FurniSure</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse float-nav" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" id="color-primary"><span><i class="fas fa-home"></i></span> HOME <span
+              class="sr-only color-primary">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: lightgrey;"><span><i class="fas fa-sitemap"></i></span>
+            COLLECTIONS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: lightgrey;"><span><i class="fas fa-store-alt"></i></span> PURCHASE
+            LIST</a>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link bg-primary-color" href="#" type="button" style="color: lightgrey;">POST AN AD</button>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <section class="hero bg-primary-color full-width d-none d-md-block d-lg-block">
+    <h2 class="color-white font-weight-bold text-align-center padding-top-lg">FurniSure</h2>
+    <p class="color-white text-align-center">Buying And Selling couldn't be Simpler than this</p>
+    <form action="" class="full-width">
+      <select id="cars" name="cars" class="padding-sm">
+        <option value="volvo">All Departments</option>
+        <option value="saab">Kitchen</option>
+        <option value="fiat">Living Room</option>
+        <option value="audi">Bed Room</option>
+      </select>
+      <input type="text" placeholder="What do you search for?" class="padding-sm">
+      <input type="text" placeholder="Search|" class="padding-sm">
+      <button class="bg-dark padding-sm color-white">Search</button>
+    </form>
+  </section>
+  <section class="hot-deals padding-horizontal-lg margin-bottom-md d-none d-lg-block d-md-block margin-top-md">
+    <h5 class="color-primary-dark">Hot Ads</h5>
+    <div class="d-flex">
+      <div class="padding-horizontal-lg icon-holder">
+        <i class="fas fa-angle-left padding-sm font-md"></i>
+      </div>
+      <div class="deal-image"></div>
+      <div class="deal-description margin-left-md">
+        <h4 class="color-primary">Best of Atique (From Jamaica)</h4>
+        <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, totam doloribus. Unde eos odio
+          fugit ipsa
+          commodi fugiat numquam perferendis.</p>
+        <p>By: John Doe</p>
+        <p>Location: San Francisco</p>
+        <div class="d-flex">
+          <button class="padding-sm bg-primary-color color-white">$450</button>
+          <button class="padding-sm bg-primary-color color-white"><i class="fas fa-cart-plus color-primary-dark"></i>
+            Purchase Details</button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sure-bg">
+    <section class="first-sure full-width">
+      <h4 class="margin-left-md color-dark"><span class="color-primary-dark"><i class="fas fa-faucet"></i></span>
+        Kitchen Sure
+      </h4>
+      <div class="border"></div>
+      <div class="d-flex full-width padding-sm justify-content-between">
+        <div class="d-flex column kitchen-contain margin-bottom-md">
+          <div class="bg-image">
+            <img
+              src="https://images.unsplash.com/photo-1538944570562-2c9cb7857097?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8a2l0Y2hlbiUyMGZ1cm5pdHVyZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+              alt="kitchen furniture" class="padding-sm">
+          </div>
+          <div class="margin-left-sm">
+            <p>Living room furniture</p>
+            <p class="color-danger font-weight-bold">Used</p>
+            <p class="color-primary-dark">From: San Francisco, US</p>
+            <p class="color-danger font-weight-bold"><span class="color-primary-dark font-lg padding-right-xxlg"><i
+                  class="far fa-plus-square"></i></span> 450$</p>
+          </div>
+        </div>
+        <div class="d-flex column kitchen-contain margin-bottom-md">
+          <div class="bg-image">
+            <img
+              src="https://images.unsplash.com/photo-1512914890251-2f96a9b0bbe2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjF8fGtpdGNoZW4lMjBmdXJuaXR1cmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+              alt="kitchen furniture" class="padding-sm">
+          </div>
+          <div class="margin-left-sm">
+            <p>Living room furniture</p>
+            <p class="color-danger font-weight-bold">Used</p>
+            <p class="color-primary-dark">From: San Francisco, US</p>
+            <p class="color-danger font-weight-bold"><span class="color-primary-dark font-lg padding-right-xxlg"><i
+                  class="far fa-plus-square"></i></span> 450$</p>
+          </div>
+        </div>
+        <div class="d-flex column kitchen-contain margin-bottom-md">
+          <div class="bg-image">
+            <img
+              src="https://images.unsplash.com/photo-1592923867318-2016d04942d7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fGtpdGNoZW4lMjBmdXJuaXR1cmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+              alt="kitchen furniture" class="padding-sm">
+          </div>
+          <div class="margin-left-sm">
+            <p>Living room furniture</p>
+            <p class="color-danger font-weight-bold">Used</p>
+            <p class="color-primary-dark">From: San Francisco, US</p>
+            <p class="color-danger font-weight-bold"><span class="color-primary-dark font-lg padding-right-xxlg"><i
+                  class="far fa-plus-square"></i></span> 450$</p>
+          </div>
+        </div>
+        <div class="d-flex column kitchen-contain margin-bottom-md">
+          <div class="bg-image">
+            <img
+              src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8a2l0Y2hlbiUyMGZ1cm5pdHVyZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+              alt="kitchen furniture" class="padding-sm">
+          </div>
+          <div class="margin-left-sm">
+            <p>Living room furniture</p>
+            <p class="color-danger font-weight-bold">Used</p>
+            <p class="color-primary-dark">From: San Francisco, US</p>
+            <p class="color-danger font-weight-bold"><span class="color-primary-dark font-lg padding-right-xxlg"><i
+                  class="far fa-plus-square"></i></span> 450$</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="first-sure full-width">
+      <h4 class="margin-left-md"><span class="color-primary-dark"><i class="fas fa-gifts"></i></span> Living Room Sure
+      </h4>
+      <div class="border"></div>
+      <div class="d-flex full-width padding-sm justify-content-between">
+        <div class="d-flex column kitchen-contain margin-bottom-md">
+          <div class="bg-image">
+            <img
+              src="https://images.unsplash.com/photo-1575471336446-ff5818dff4f1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8bGl2aW5nJTIwcm9vbSUyMGZ1cm5pdHVyZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+              alt="kitchen furniture" class="padding-sm">
+          </div>
+          <div class="margin-left-sm">
+            <p>Living room furniture</p>
+            <p class="color-danger font-weight-bold">Used</p>
+            <p class="color-primary-dark">From: San Francisco, US</p>
+            <p class="color-danger font-weight-bold"><span class="color-primary-dark font-lg padding-right-xxlg"><i
+                  class="far fa-plus-square"></i></span> 450$</p>
+          </div>
+        </div>
+        <div class="d-flex column kitchen-contain margin-bottom-md">
+          <div class="bg-image">
+            <img
+              src="https://images.unsplash.com/photo-1577962224182-d9e092fa4740?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8bGl2aW5nJTIwcm9vbSUyMGZ1cm5pdHVyZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+              alt="kitchen furniture" class="padding-sm">
+          </div>
+          <div class="margin-left-sm">
+            <p>Living room furniture</p>
+            <p class="color-danger font-weight-bold">Used</p>
+            <p class="color-primary-dark">From: San Francisco, US</p>
+            <p class="color-danger font-weight-bold"><span class="color-primary-dark font-lg padding-right-xxlg"><i
+                  class="far fa-plus-square"></i></span> 450$</p>
+          </div>
+        </div>
+        <div class="d-flex column kitchen-contain margin-bottom-md">
+          <div class="bg-image">
+            <img
+              src="https://images.unsplash.com/photo-1545454760-a8e55231441c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8bGl2aW5nJTIwcm9vbSUyMGZ1cm5pdHVyZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+              alt="kitchen furniture" class="padding-sm">
+          </div>
+          <div class="margin-left-sm">
+            <p>Living room furniture</p>
+            <p class="color-danger font-weight-bold">Used</p>
+            <p class="color-primary-dark">From: San Francisco, US</p>
+            <p class="color-danger font-weight-bold"><span class="color-primary-dark font-lg padding-right-xxlg"><i
+                  class="far fa-plus-square"></i></span> 450$</p>
+          </div>
+        </div>
+        <div class="d-flex column kitchen-contain margin-bottom-md">
+          <div class="bg-image">
+            <img
+              src="https://images.unsplash.com/photo-1586997777624-4ae99354a050?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGxpdmluZyUyMHJvb20lMjBmdXJuaXR1cmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+              alt="kitchen furniture" class="padding-sm">
+          </div>
+          <div class="margin-left-sm">
+            <p>Living room furniture</p>
+            <p class="color-danger font-weight-bold">Used</p>
+            <p class="color-primary-dark">From: San Francisco, US</p>
+            <p class="color-danger font-weight-bold"><span class="color-primary-dark font-lg padding-right-xxlg"><i
+                  class="far fa-plus-square"></i></span> 450$</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="first-sure full-width">
+      <h4 class="margin-left-md"><span class="color-primary-dark"><i class="fas fa-bed"></i></span> Bed Room Sure </h4>
+      <div class="border"></div>
+      <div class="d-flex full-width padding-sm justify-content-between">
+        <div class="d-flex column kitchen-contain margin-bottom-md">
+          <div class="bg-image">
+            <img
+              src="https://images.unsplash.com/photo-1570054417025-2fa787c4c8f6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGJlZCUyMHJvb20lMjBmdXJuaXR1cmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+              class="padding-sm">
+          </div>
+          <div class="margin-left-sm">
+            <p>Living room furniture</p>
+            <p class="color-danger font-weight-bold">Used</p>
+            <p class="color-primary-dark">From: San Francisco, US</p>
+            <p class="color-danger font-weight-bold"><span class="color-primary-dark font-lg padding-right-xxlg"><i
+                  class="far fa-plus-square"></i></span> 450$</p>
+          </div>
+        </div>
+        <div class="d-flex column kitchen-contain margin-bottom-md">
+          <div class="bg-image">
+            <img
+              src="https://images.unsplash.com/photo-1566732141996-4bd15e53c53b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fGJlZCUyMHJvb20lMjBmdXJuaXR1cmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+              class="padding-sm">
+          </div>
+          <div class="margin-left-sm">
+            <p>Living room furniture</p>
+            <p class="color-danger font-weight-bold">Used</p>
+            <p class="color-primary-dark">From: San Francisco, US</p>
+            <p class="color-danger font-weight-bold"><span class="color-primary-dark font-lg padding-right-xxlg"><i
+                  class="far fa-plus-square"></i></span> 450$</p>
+          </div>
+        </div>
+        <div class="d-flex column kitchen-contain margin-bottom-md">
+          <div class="bg-image">
+            <img
+              src="https://images.unsplash.com/photo-1572891086295-6c1c7c476549?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTd8fGJlZCUyMHJvb20lMjBmdXJuaXR1cmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+              alt="kitchen furniture" class="padding-sm">
+          </div>
+          <div class="margin-left-sm">
+            <p>Living room furniture</p>
+            <p class="color-danger font-weight-bold">Used</p>
+            <p class="color-primary-dark">From: San Francisco, US</p>
+            <p class="color-danger font-weight-bold"><span class="color-primary-dark font-lg padding-right-xxlg"><i
+                  class="far fa-plus-square"></i></span> 450$</p>
+          </div>
+        </div>
+        <div class="d-flex column kitchen-contain margin-bottom-md">
+          <div class="bg-image">
+            <img
+              src="https://images.unsplash.com/photo-1560067174-e553b3647603?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDB8fGJlZCUyMHJvb20lMjBmdXJuaXR1cmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+              alt="kitchen furniture" class="padding-sm">
+          </div>
+          <div class="margin-left-sm">
+            <p>Living room furniture</p>
+            <p class="color-danger font-weight-bold">Used</p>
+            <p class="color-primary-dark">From: San Francisco, US</p>
+            <p class="color-danger font-weight-bold"><span class="color-primary-dark font-lg padding-right-xxlg"><i
+                  class="far fa-plus-square"></i></span> 450$</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <footer class="full-width">
+    <div class="d-flex padding-horizontal-lg margin-top-lg justify-content-between  margin-bottom-md">
+      <div class="flex-equal">
+        <h3 class="text-align-center color-primary-dark font-weight-bold">FurniSure</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis deleniti eligendi, blanditiis ex aliquam ea
+          placeat quibusdam veniam harum voluptatem autem nobis quis incidunt nesciunt doloribus eius, soluta
+          laboriosam! Mollitia quae ad, repellat vel culpa architecto!</p>
+      </div>
+      <div class="flex-equal margin-left-md">
+        <h2 class="color-primary">Categories</h2>
+        <div class="border-bottom"></div>
+        <div class="d-flex nowrap">
+          <div class="flex-size d-flex column color-primary-dark">
+            <a href="" class="color-primary-dark">Real Estate</a>
+            <a href="" class="color-primary-dark">Automotives</a>
+            <a href="" class="color-primary-dark">Electronics</a>
+            <a href="" class="color-primary-dark">Clothing</a>
+            <a href="" class="color-primary-dark">Fashion</a>
+            <a href="" class="color-primary-dark">Kids</a>
+            <a href="" class="color-primary-dark">Food & Drink</a>
+          </div>
+          <div class="flex-equal d-flex column">
+            <a href="" class="color-primary-dark">Real Estate</a>
+            <a href="" class="color-primary-dark">Automotives</a>
+            <a href="" class="color-primary-dark">Electronics</a>
+            <a href="" class="color-primary-dark">Clothing</a>
+            <a href="" class="color-primary-dark">Fashion</a>
+            <a href="" class="color-primary-dark">Kids</a>
+            <a href="" class="color-primary-dark">Food & Drink</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <p class="color-primary-dark text-align-center font-sm">Copyright© 2020 FurniSure.com. All Rights Reserved. Developed
+    by Temitope Grace</p>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,15 +1,19 @@
-@import 'variables';
+@import "variables";
 
 .bg-primary-dark {
   background: $primary-dark;
 }
 
-.bg-primary {
+.bg-primary-color {
   background: $primary-color;
 }
 
 .bg-dark {
   background-color: $secondary-color;
+}
+
+.color-danger {
+  color: $danger;
 }
 
 .color-primary {
@@ -26,4 +30,8 @@
 
 .color-inherit {
   color: inherit;
+}
+
+.color-white {
+  color: #fff;
 }
