@@ -3,7 +3,7 @@ A Furniture Shopping platform mini-website. It consists of two pages. The landin
 
 ### 
 
-![screenshot](./Desktop-Newsweek.png)
+<img width="949" alt="furnisure" src="https://user-images.githubusercontent.com/58818795/102397602-f00b9c80-3f92-11eb-9c6e-b3f9bb0969a6.png">
 
 Additional description about the project and its features.
 
