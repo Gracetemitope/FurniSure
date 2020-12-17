@@ -14,16 +14,16 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-dark dflex padding-horizontal-lg">
-    <a class="navbar-brand color-white logo" href="#" style="color: white;">FurniSure</a>
+    <a class="navbar-brand color-white logo" href="./index.html" style="color: white;" class="font-weight-bold">FurniSure</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon" id="light"></span>
     </button>
 
     <div class="collapse navbar-collapse float-nav" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#" id="color-primary"><span><i class="fas fa-home"></i></span> HOME <span
+          <a class="nav-link"  id="color-primary" href="./index.html"><span><i class="fas fa-home"></i></span> HOME <span
               class="sr-only color-primary">(current)</span></a>
         </li>
         <li class="nav-item">
@@ -41,39 +41,175 @@
       </ul>
     </div>
   </nav>
-  <section class="hero bg-primary-color full-width d-none d-md-block d-lg-block">
+  <section class="hero bg-primary-color full-width">
     <h2 class="color-white font-weight-bold text-align-center padding-top-lg">FurniSure</h2>
     <p class="color-white text-align-center">Search around 124,000 items waiting to be sold</p>
-    <form action="" class="full-width">
+    <div class="d-flex search-form">
       <select id="cars" name="cars" class="padding-sm">
         <!-- <option value="volvo">All Departments</option> -->
         <option value="saab">Kitchen</option>
         <option value="fiat">Living Room</option>
         <option value="audi">Bed Room</option>
       </select>
-      <input type="text" placeholder="Kitchen Furniture" class="padding-sm" readonly>
-      <input type="text" placeholder="San Francisco" class="padding-sm">
+      <input type="text" placeholder="Kitchen Furniture" class="padding-sm d-none d-lg-block d-md-block" readonly>
+      <input type="text" placeholder="San Francisco" class="padding-sm d-none d-lg-block d-md-block">
       <button class="bg-dark padding-sm color-white">Search</button>
-    </form>
-  </section>
-  <section class="d-flex">
-    <aside class="aside-menu">
-      <div class="d-flex">
+      </div>
+    </section>
+  <section class="d-flex padding-horizontal-lg search-page margin-bottom-md">
+    <aside class="aside-menu padding-top-sm d-none d-md-block d-lg-block">
+      <div class="padding-left-sm">
         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-        <label for="vehicle1"> Rent</label><br>
+        <label for="vehicle1">   Rent</label>
         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-        <label for="vehicle1"> ownership</label><br>
+        <label for="vehicle1"> ownership</label>
+      <div>
+        <h5 class="margin-top-sm">Type</h5>
+        <hr>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Entire Place</label><br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Private Room</label><br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Shared Room</label><br>
       </div>
       <div>
-      <h5>Type</h5>
-      <hr>
-      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-        <label for="vehicle1"> Rent</label><br>
+        <h5 class="margin-top">Size</h5>
+        <hr>
         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-        <label for="vehicle1"> ownership</label><br>
+        <label for="vehicle1"> 2 - 4 Rooms</label><br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> 5+ Rooms</label><br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Custom</label>
+        <input type="numbers" placeholder="5" class="custom">
+        <br>
+      </div>
+      <div>
+        <h5 class="margin-top-md">Price Range</h5>
+        <hr>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> 10$ - 100$</label><br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> 100$ - 500$</label><br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> 500$ - 1000$</label> <br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> $1000+</label><br>
+        <br>
+      </div>
       </div>
     </aside>
+    <articles class="search-article padding-top-sm">
+      <p class="margin-left-md">138 Results for <strong>"Kitchen"</strong> Search at <strong>San Francisco</strong> in Category <strong>Real
+          Estate</strong></p>
+      <hr>
+      <div class="margin-bottom-md">
+        <div class="d-flex justify-content-between margin-left-md">
+          <div class="search-bg">
+            <div class="search-carousel d-flex justify-content-between  bg-dark"> 
+              <i class="fa fa-angle-left margin-left-sm color-primary"></i>
+              <i class="fa fa-angle-right margin-right-sm color-primary"></i>
+            </div>
+          </div class="margin-bottom-md">
+          <div class="search-info">
+            <h5>Kitchen with cabinet and dinning</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, tempore aspernatur. Explicabo
+              repudiandae accusamus, maxime inventore nam dolores dicta ipsam!</p>
+            <p><strong>Location:</strong> 21 Start Street, San Francisco US</p>
+            <p>23 Nov, 2014 <span class="margin-left-md color-primary font-weight-bold">150$</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="margin-bottom-md">
+        <div class="d-flex justify-content-between margin-left-md">
+          <div class="search-bg">
+            <div class="search-carousel d-flex justify-content-between  bg-dark"> 
+              <i class="fa fa-angle-left margin-left-sm color-primary"></i>
+              <i class="fa fa-angle-right margin-right-sm color-primary"></i>
+            </div>
+          </div>
+          <div class="search-info">
+            <h5>Kitchen with cabinet and dinning</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, tempore aspernatur. Explicabo
+              repudiandae accusamus, maxime inventore nam dolores dicta ipsam!</p>
+            <p><strong>Location:</strong> 21 Start Street, San Francisco US</p>
+            <p>23 Nov, 2014 <span class="margin-left-md color-primary font-weight-bold">150$</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="margin-bottom-md">
+        <div class="d-flex justify-content-between margin-left-md">
+          <div class="search-bg">
+            <div class="search-carousel d-flex justify-content-between  bg-dark"> 
+              <i class="fa fa-angle-left margin-left-sm color-primary"></i>
+              <i class="fa fa-angle-right margin-right-sm color-primary"></i>
+            </div>
+          </div>
+          <div class="search-info">
+            <h5>Kitchen with cabinet and dinning</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, tempore aspernatur. Explicabo
+              repudiandae accusamus, maxime inventore nam dolores dicta ipsam!</p>
+            <p><strong>Location:</strong> 21 Start Street, San Francisco US</p>
+            <p>23 Nov, 2014 <span class="margin-left-md color-primary font-weight-bold">150$</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="margin-bottom-md">
+        <div class="d-flex justify-content-between margin-left-md">
+          <div class="search-bg">
+            <div class="search-carousel d-flex justify-content-between  bg-dark"> 
+              <i class="fa fa-angle-left margin-left-sm color-primary"></i>
+              <i class="fa fa-angle-right margin-right-sm color-primary"></i>
+            </div>
+          </div>
+          <div class="search-info">
+            <h5>Kitchen with cabinet and dinning</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, tempore aspernatur. Explicabo
+              repudiandae accusamus, maxime inventore nam dolores dicta ipsam!</p>
+            <p><strong>Location:</strong> 21 Start Street, San Francisco US</p>
+            <p>23 Nov, 2014 <span class="margin-left-md color-primary font-weight-bold">150$</span></p>
+          </div>
+        </div>
+      </div>
+    </articles>
   </section>
+  <footer class="full-width">
+    <div class="d-flex padding-horizontal-lg margin-top-lg justify-content-between  margin-bottom-md">
+      <div class="flex-equal">
+        <h3 class="text-align-center color-primary-dark font-weight-bold">FurniSure</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis deleniti eligendi, blanditiis ex aliquam ea
+          placeat quibusdam veniam harum voluptatem autem nobis quis incidunt nesciunt doloribus eius, soluta
+          laboriosam! Mollitia quae ad, repellat vel culpa architecto!</p>
+      </div>
+      <div class="flex-equal margin-left-md">
+        <h2 class="color-primary">Categories</h2>
+        <div class="border-bottom"></div>
+        <div class="d-flex nowrap">
+          <div class="flex-size d-flex column color-primary-dark">
+            <a href="" class="color-primary-dark">Real Estate</a>
+            <a href="" class="color-primary-dark">Automotives</a>
+            <a href="" class="color-primary-dark">Electronics</a>
+            <a href="" class="color-primary-dark">Clothing</a>
+            <a href="" class="color-primary-dark">Fashion</a>
+            <a href="" class="color-primary-dark">Kids</a>
+            <a href="" class="color-primary-dark">Food & Drink</a>
+          </div>
+          <div class="flex-equal d-flex column">
+            <a href="" class="color-primary-dark">Real Estate</a>
+            <a href="" class="color-primary-dark">Automotives</a>
+            <a href="" class="color-primary-dark">Electronics</a>
+            <a href="" class="color-primary-dark">Clothing</a>
+            <a href="" class="color-primary-dark">Fashion</a>
+            <a href="" class="color-primary-dark">Kids</a>
+            <a href="" class="color-primary-dark">Food & Drink</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <p class="color-primary-dark text-align-center font-sm">Copyright© 2020 FurniSure.com. All Rights Reserved. Developed
+    by Temitope Grace</p>
 </body>
 
 </html>

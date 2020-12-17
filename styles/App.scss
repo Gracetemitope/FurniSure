@@ -19,11 +19,6 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  // font-family: $font-family-text;
-}
-
-::-webkit-scrollbar {
-  width: 5px;
 }
 
 a {
@@ -33,10 +28,6 @@ a {
     color: inherit !important;
   }
 }
-
-// #color-white {
-//   color: #fff;
-// }
 
 #color-primary {
   color: $primary-color;
@@ -52,18 +43,6 @@ button {
   border: none;
 }
 
-input {
-  ::-webkit-outer-spin-button,
-  ::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-
-  &[type="number"] {
-    -moz-appearance: textfield;
-  }
-}
-
 button {
   background: none;
 
@@ -72,10 +51,6 @@ button {
   }
 
   cursor: pointer;
-}
-
-form {
-  width: 100%;
 }
 
 h2,
@@ -94,7 +69,7 @@ h6 {
 
 .border-bottom {
   border: 2px solid $danger;
-  height: 0px;
+  height: 0;
   width: 50%;
 }
 
@@ -115,28 +90,17 @@ img {
 .hero {
   height: 250px;
   width: 100%;
-  // border: 1px solid black;
+
   form {
     width: 100%;
+    margin: 0 auto;
     align-items: center;
-    margin-left: 16rem;
-
-    select {
-      width: 200px;
-    }
-    input {
-      width: 200px;
-    }
-    button {
-      width: 110px;
-    }
   }
 }
 
 .hot-deals {
   width: 100%;
   height: auto;
-  // border: 1px solid black;
 
   .deal-image {
     height: 240px;
@@ -176,18 +140,20 @@ img {
   }
 }
 
+.search-page {
+  background-color: rgba(243, 240, 240, 0.911);
+}
+
 .first-sure {
-  // height: 100vh;
   .border {
     width: 100%;
     border: 1px solid $primary-dark;
-    margin: 10px 40px 20px 0px;
+    margin: 10px 40px 20px 0;
   }
 
   .kitchen-contain {
     background-color: #fff;
-    flex-basis: 180px;
-    // border: 1px solid black;
+    flex-basis: 170px;
     height: auto;
     box-shadow: 1px 1px 1px 1px lightgrey;
 
@@ -199,8 +165,6 @@ img {
         width: 180px;
         height: 160px;
       }
-      // background: url("https://images.unsplash.com/photo-1538944570562-2c9cb7857097?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8a2l0Y2hlbiUyMGZ1cm5pdHVyZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
-      // background-position: center center;
     }
 
     p {
@@ -212,6 +176,7 @@ img {
 .flex-size {
   flex-basis: 200px;
 }
+
 // footer
 footer {
   border: 2px solid lightgrey;
@@ -221,18 +186,85 @@ footer {
   float: right;
 }
 
-.navbar {
-  border: 1px solid red;
-}
-
 // Aside Menu
 .aside-menu {
-  flex-basis: 300px;
-  border: 1px solid black;
-  height: 400px;
+  flex-basis: 30%;
+  box-shadow: 1px 1px 1px 1px lightgrey;
+  height: 61.7rem;
 }
 
-/** large screen ***/
+.search-article {
+  flex-basis: 70%;
+  box-shadow: 1px 1px 1px 0 lightgrey;
+  height: auto;
+}
+
+.search-bg {
+  flex-basis: 250px;
+  height: 200px;
+  background-image: url("https://images.unsplash.com/photo-1538944570562-2c9cb7857097?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8a2l0Y2hlbiUyMGZ1cm5pdHVyZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+  background-position: center;
+}
+
+.search-info {
+  flex-basis: 30rem;
+}
+
+.search-carousel {
+  width: 65px;
+  height: 30px;
+  margin-top: 10.5rem;
+  margin-left: 11.5rem;
+
+  i {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;..");
+}
+
+#light {
+  color: #fff;
+  background-color: $primary-color;
+}
+
+.search-form {
+  justify-content: space-around;
+  // width: 70%;
+  margin: 0 auto;
+}
+
+// medium screen
+@media only screen and (min-width: 768px) {
+  .deal-description {
+    margin-left: 8rem;
+    margin-top: 10px;
+  }
+
+  .sure-bg {
+    .price {
+      margin-left: -0.4rem;
+    }
+  }
+
+  .search-page {
+    margin-left: -2%;
+
+    .aside-menu {
+      display: none;
+      padding-left: 0;
+    }
+
+    .custom {
+      width: 15px;
+    }
+  }
+}
+
+// large screen
 @media only screen and (min-width: 992px) {
   .first-sure {
     .kitchen-contain {
@@ -248,6 +280,35 @@ footer {
         img {
           width: 290px;
           height: 290px;
+        }
+      }
+    }
+  }
+
+  .search-form {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+// For smaller screens
+@media only screen and (max-width: 360px) {
+  .first-sure {
+    .kitchen-contain {
+      background-color: #fff;
+      flex-basis: 270px;
+      margin-left: 20px;
+      align-self: center;
+      height: auto;
+      box-shadow: 1px 1px 1px 1px lightgrey;
+
+      .bg-image {
+        width: 270px;
+        height: 270px;
+
+        img {
+          width: 270px;
+          height: 270px;
         }
       }
     }
