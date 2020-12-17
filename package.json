@@ -19,7 +19,7 @@
   "homepage": "https://github.com/Gracetemitope/FurniSure#readme",
   "devDependencies": {
     "hint": "^6.0.7",
-    "stylelint": "^13.8.0",
+    "stylelint": "^13.3.3",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.18.0"
