@@ -18,7 +18,7 @@ Additional description about the project and its features.
 
 [Live Demo Link](https://gracetemitope.github.io/FurniSure/)
 
-
+[Video  Link](https://www.loom.com/share/f031f170f6f64fb5a0a5fc243d911da6)
 
 ### Setup
 Checkout the project on your web browser with the provided link.
