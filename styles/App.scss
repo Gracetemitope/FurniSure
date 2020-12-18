@@ -256,6 +256,11 @@ footer {
     }
   }
 
+  .aside-menu {
+    flex-basis: 30%;
+    height: 61.7rem;
+  }
+
   .search-page {
     margin-left: -2%;
 
@@ -268,13 +273,11 @@ footer {
       width: 15px;
     }
   }
+
   .search-article {
     flex-basis: 70%;
   }
-  .aside-menu {
-    flex-basis: 30%;
-    height: 61.7rem;
-  }
+
   .search-form {
     width: 85%;
     margin: 0 auto;
@@ -285,7 +288,7 @@ footer {
     height: 0;
     width: 50%;
   }
-  
+
   .border-bottom {
     border: 2px solid $danger;
     height: 0;
@@ -317,6 +320,7 @@ footer {
   .custom {
     width: 15px;
   }
+
   .search-form {
     width: 50%;
     margin: 0 auto;
@@ -325,6 +329,7 @@ footer {
   .search-article {
     flex-basis: 70%;
   }
+
   .aside-menu {
     flex-basis: 30%;
     height: 61.7rem;
@@ -353,7 +358,7 @@ footer {
       }
     }
   }
-  
+
   .custom {
     width: 15px;
   }
