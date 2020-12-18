@@ -13,40 +13,43 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark dflex padding-horizontal-lg">
-    <a class="navbar-brand color-white logo font-weight-bold" href="./index.html" style="color: white;">FurniSure</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon" id="light"></span>
-    </button>
-
-    <div class="collapse navbar-collapse float-nav" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" id="color-primary" href="./index.html"><span><i class="fas fa-home"></i></span> HOME <span
-              class="sr-only color-primary">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" style="color: lightgrey;"><span><i class="fas fa-sitemap"></i></span>
-            COLLECTIONS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" style="color: lightgrey;"><span><i class="fas fa-store-alt"></i></span> PURCHASE
-            LIST</a>
-        </li>
-        <li class="nav-item">
-          <button class="nav-link bg-primary-color" type="button" style="color: lightgrey;">POST AN AD</button>
-        </li>
-
-      </ul>
-    </div>
-  </nav>
+  <main>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark dflex padding-horizontal-lg">
+      <a class="navbar-brand color-white logo font-weight-bold" href="./index.html" style="color: white;">FurniSure</a>
+      <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color: white;" id="light"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse float-nav" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html" id="color-primary"><span><i class="fas fa-home"></i></span> HOME <span
+                class="sr-only color-primary">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: lightgrey;"><span><i class="fas fa-sitemap"></i></span>
+              COLLECTIONS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./searchpage.html" style="color: lightgrey;"><span><i
+                  class="fas fa-store-alt"></i></span> PURCHASE
+              LIST</a>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link bg-primary-color" type="button" style="color: lightgrey;">POST AN AD</button>
+          </li>
+  
+        </ul>
+      </div>
+    </nav>
+        
   <section class="hero bg-primary-color full-width">
     <h2 class="color-white font-weight-bold text-align-center padding-top-lg">FurniSure</h2>
     <p class="color-white text-align-center">Search around 124,000 items waiting to be sold</p>
     <div class="d-flex search-form">
       <select id="cars" name="cars" class="padding-sm">
-        <!-- <option value="volvo">All Departments</option> -->
         <option value="saab">Kitchen</option>
         <option value="fiat">Living Room</option>
         <option value="audi">Bed Room</option>
@@ -163,6 +166,38 @@
         </div>
       </div>
     </div>
+    <aside class="aside-menu padding-top-sm d-sm-block d-md-none d-lg-none">
+      <div class="padding-left-sm">
+        <label><input type="checkbox" name="vehicle1" value="Bike"> Rent
+        </label>
+        <label><input type="checkbox" name="vehicle1" value="Bike"> ownership</label>
+        <div>
+          <h5 class="margin-top-sm">Type</h5>
+          <hr>
+          <label><input type="checkbox" name="vehicle1" value="Bike"> Entire Place</label><br>
+          <label><input type="checkbox" name="vehicle1" value="Bike"> Private Room</label><br>
+          <label><input type="checkbox" name="vehicle1" value="Bike"> Shared Room</label><br>
+        </div>
+        <div>
+          <h5 class="margin-top">Size</h5>
+          <hr>
+          <label><input type="checkbox" name="vehicle1" value="Bike"> 2 - 4 Rooms</label><br>
+          <label> <input type="checkbox" name="vehicle1" value="Bike"> 5+ Rooms</label><br>
+          <label><input type="checkbox" name="vehicle1" value="Bike"> Custom</label>
+          <label><input type="number" placeholder="5" class="custom"></label>
+          <br>
+        </div>
+        <div>
+          <h5 class="margin-top-md">Price Range</h5>
+          <hr>
+          <label><input type="checkbox" name="vehicle1" value="Bike"> 10$ - 100$</label><br>
+          <label><input type="checkbox" name="vehicle1" value="Bike"> 100$ - 500$</label><br>
+          <label><input type="checkbox" name="vehicle1" value="Bike"> 500$ - 1000$</label> <br>
+          <label><input type="checkbox" name="vehicle1" value="Bike"> $1000+</label><br>
+          <br>
+        </div>
+      </div>
+    </aside>
   </section>
   <footer class="full-width">
     <div class="d-flex padding-horizontal-lg margin-top-lg justify-content-between  margin-bottom-md">
@@ -174,7 +209,7 @@
       </div>
       <div class="flex-equal margin-left-md">
         <h2 class="color-primary">Categories</h2>
-        <div class="border-bottom"></div>
+        <div class="border-bottom-category"></div>
         <div class="d-flex nowrap">
           <div class="flex-size d-flex column color-primary-dark">
             <a href="" class="color-primary-dark">Real Estate</a>
@@ -196,10 +231,35 @@
           </div>
         </div>
       </div>
+      <div class="flex-equal margin-left-md">
+        <h2 class="color-primary">Navigation</h2>
+        <div class="border-bottom"></div>
+        <div class="d-flex nowrap">
+          <div class="flex-size d-flex column color-primary-dark">
+            <a href="" class="color-primary-dark">Home</a>
+            <a href="" class="color-primary-dark">Sing In</a>
+            <a href="" class="color-primary-dark">Sign Up</a>
+            <a href="" class="color-primary-dark">Terms and Conditions</a>
+            <a href="" class="color-primary-dark">FAQ</a>
+            <a href="" class="color-primary-dark">Help</a>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
   <p class="color-primary-dark text-align-center font-sm">Copyright© 2020 FurniSure.com. All Rights Reserved. Developed
     by Temitope Grace</p>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>

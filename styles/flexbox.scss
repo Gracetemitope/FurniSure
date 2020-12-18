@@ -73,9 +73,6 @@
 .d-inline-block {
   display: inline-block;
 }
-// .flex-equal,
-// .flex-equal-break-md {
-// }
 
 [class*='flex-equal'] {
   flex: 1;
@@ -88,15 +85,16 @@
   }
 }
 
-// .flex-equal-break-md {
-//   @include media-breakpoint-down(md) {
-//     flex-basis: 100%;
-//     margin-right: 0px;
-//     border: none;
-//     padding-right: 0px;
-//   }
-// }
+.flex-equal-break-md {
+  @include media-breakpoint-down(md) {
+    flex-basis: 100%;
+    margin-right: 0;
+    border: none;
+    padding-right: 0;
+  }
+}
 // End of Flex Control
+
 // position
 .position-relative {
   position: relative;
