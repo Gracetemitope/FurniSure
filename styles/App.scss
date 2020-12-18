@@ -243,6 +243,10 @@ footer {
   margin: 0 auto;
 }
 
+.custom {
+  width: 15px;
+}
+
 // medium screen
 @media only screen and (min-width: 768px) {
   .deal-description {
@@ -270,7 +274,7 @@ footer {
     }
 
     .custom {
-      width: 15px;
+      width: 25px;
     }
   }
 
