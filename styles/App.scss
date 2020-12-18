@@ -107,6 +107,7 @@ img {
 .hot-deals {
   width: 100%;
   height: auto;
+  margin: 30px auto;
 
   .deal-image {
     height: 240px;
@@ -148,6 +149,25 @@ img {
 
 .search-page {
   background-color: rgba(243, 240, 240, 0.911);
+
+  .kitchen-one {
+    background-image: url("https://images.unsplash.com/photo-1512914890251-2f96a9b0bbe2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjF8fGtpdGNoZW4lMjBmdXJuaXR1cmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+    background-position: center;
+  }
+
+  .kitchen-two {
+    background-image: url("https://images.unsplash.com/photo-1592923867318-2016d04942d7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fGtpdGNoZW4lMjBmdXJuaXR1cmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+    background-position: center;
+  }
+
+  .kitchen-three {
+    background-image: url("https://images.unsplash.com/photo-1475250365338-5784b5ef4cea?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8a2l0Y2hlbiUyMGZ1cm5pdHVyZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+    background-position: center;
+  }
+
+  .kitchen-four {
+    background-image: url("https://images.unsplash.com/photo-1574621974239-00deab554d60?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8a2l0Y2hlbiUyMGZ1cm5pdHVyZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+  }
 }
 
 .first-sure {
@@ -206,10 +226,8 @@ footer {
 }
 
 .search-bg {
-  flex-basis: 250px;
+  flex-basis: 300px;
   height: 200px;
-  background-image: url("https://images.unsplash.com/photo-1538944570562-2c9cb7857097?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8a2l0Y2hlbiUyMGZ1cm5pdHVyZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
-  background-position: center;
 }
 
 .search-info {
@@ -220,7 +238,7 @@ footer {
   width: 65px;
   height: 30px;
   margin-top: 10.5rem;
-  margin-left: 11.5rem;
+  margin-left: 14.5rem;
 
   i {
     font-size: 2rem;
@@ -298,6 +316,9 @@ footer {
     height: 0;
     width: 50%;
   }
+  .hot-deals {
+    // margin-left: 3.9rem;
+  }
 }
 
 // large screen
@@ -365,5 +386,26 @@ footer {
 
   .custom {
     width: 15px;
+  }
+
+  .search-bg {
+    flex-basis: 300px;
+    height: 200px;
+  }
+  
+  .search-info {
+    flex-basis: 30rem;
+  }
+  
+  .search-carousel {
+    width: 65px;
+    height: 30px;
+    margin-top: 10.5rem;
+    margin-left: 13.7rem;
+  
+    i {
+      font-size: 2rem;
+      cursor: pointer;
+    }
   }
 }
